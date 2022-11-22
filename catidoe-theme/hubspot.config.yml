@@ -1,0 +1,14 @@
+defaultPortal: catidoe
+portals:
+  - name: catidoe
+    portalId: 23210758
+    authType: personalaccesskey
+    auth:
+      tokenInfo:
+        accessToken: >-
+          CJTO2urJMBIJAA0AAAAA4A0DGIbWiAsg1vDYCyju6QwyFGXhlzV8IER509KuYF8OrKzkDRXFOjcAAARBAAAAeAAAAAAAAAAAAAAAAAAAAAQAAMAHAP7_MTwAAAYAAABgAAAAAAAAAAAAAAAAADACQhSjBdZfitjxhBIjO2BjjpOyndnzwEoDbmExUgBaAA
+        expiresAt: '2022-11-22T03:16:52.631Z'
+    personalAccessKey: >-
+      CiQwY2M0NjUyNy00N2ZkLTQ0NzktYThkMi02N2E1ODRhOWIwOTQQhtaICxjW8NgLKhkABeaRgpPK3mgzn2WnF7RMJ5N96q8Z-sSCSgNuYTE
+    sandboxAccountType: null
+    parentAccountId: null

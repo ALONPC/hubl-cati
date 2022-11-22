@@ -1,0 +1,13 @@
+.hs-menu-wrapper ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+/* Menu color */
+.hs-menu-wrapper li > a {
+  text-decoration: none;
+  color: black;
+}

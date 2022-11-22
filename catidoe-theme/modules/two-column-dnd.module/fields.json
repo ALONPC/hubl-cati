@@ -1,0 +1,31 @@
+[ {
+  "id" : "ca1ea2e6-bff7-57bd-cb5b-0596673f3012",
+  "name" : "twocol_image",
+  "display_width" : null,
+  "label" : "Imagen",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://23210758.fs1.hubspotusercontent-na1.net/hubfs/23210758/scott-webb-m8PZ1CtZGMQ-unsplash.jpg",
+    "alt" : "scott-webb-m8PZ1CtZGMQ-unsplash",
+    "loading" : "lazy",
+    "width" : 2689,
+    "height" : 3464,
+    "max_width" : 2689,
+    "max_height" : 3464
+  }
+}, {
+  "id" : "1d4b2aad-26ab-beeb-d027-696cbfb69b8a",
+  "name" : "twocol_text_field",
+  "display_width" : null,
+  "label" : "Texto enriquecido",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h3>Find out what this cat is looking at</h3>\n<p>we honestly don't currently understand what this cat is looking at. It could be a small insect. It could be an errant carpet fiber. Perhaps the cat is looking at nothing and pondering deep existential questions that have haunted us all at one time or another.</p>"
+} ]

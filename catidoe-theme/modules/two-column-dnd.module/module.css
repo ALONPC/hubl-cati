@@ -1,0 +1,12 @@
+.two-column{
+  display: flex;
+}
+
+.text_field{
+  margin-left: 1em;
+}
+
+.img{
+  height: 100%;
+  max-width: auto;
+}

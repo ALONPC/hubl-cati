@@ -1,0 +1,46 @@
+[ {
+  "id" : "064a7caf-c879-d41e-dbfb-986001053985",
+  "name" : "name_field",
+  "display_width" : null,
+  "label" : "Texto",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Juanito"
+}, {
+  "id" : "b9a538d4-6f07-bbff-e99f-e7a769f246d2",
+  "name" : "job_field",
+  "display_width" : null,
+  "label" : "Texto",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Designer"
+}, {
+  "id" : "e7954805-e66e-b006-aa0b-21d689837b2a",
+  "name" : "image",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://23210758.fs1.hubspotusercontent-na1.net/hubfs/23210758/Captura%20de%20Pantalla%202022-11-12%20a%20la(s)%2000.03.28.png",
+    "alt" : "Captura de Pantalla 2022-11-12 a la(s) 00.03.28",
+    "loading" : "lazy",
+    "width" : 630,
+    "height" : 950,
+    "max_width" : 630,
+    "max_height" : 950
+  }
+} ]

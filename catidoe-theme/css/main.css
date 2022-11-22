@@ -1,0 +1,81 @@
+/*--------STYLES
+
+:root
+{
+    --h1-size: 1.75rem;
+    --h2-size: 1.25rem;
+    --h3-size: 1rem;
+    --normal-font: 0.875rem;
+
+    --font-bold: 900;
+    --font-medium:700;
+    --font-regular:400;
+}
+
+-------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+html,
+body {
+  background-color: #f1f1f1;
+}
+
+.page-wrap {
+    color: #000;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #ddd;
+    padding: 1em;
+    min-height: 100vh;
+}
+
+header {
+    color: {{ theme.text_color.color }};    
+    background-color: {{ theme.background_color.color }};
+    padding: 3em 50% 3em 2em;
+    margin-bottom: 3em;
+    border-bottom: 1px solid #000;
+}
+
+.header--menu_list {
+  display: flex;
+}
+
+li {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.quote--menu {
+  padding: 2em 0;
+}
+
+p {
+  font-size: 1em;
+}
+
+/* catsize */
+.hs-image-widget  {
+  width: 100%;
+}
+
+.title {
+  margin: 32px;
+}

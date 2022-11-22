@@ -1,0 +1,20 @@
+<div class="two-column">
+  
+  <div class="column img">
+    {% if module.twocol_image.src %}
+	{% set sizeAttrs = 'width="{{ module.twocol_image.width }}" height="{{ module.twocol_image.height }}"' %}
+	{% if module.twocol_image.size_type == 'auto' %}
+		{% set sizeAttrs = 'width="{{ module.twocol_image.width }}" height="{{ module.twocol_image.height }}" style="max-width: 100%; height: auto;"' %}
+	{% elif module.twocol_image.size_type == 'auto_custom_max' %}
+		{% set sizeAttrs = 'width="{{ module.twocol_image.max_width }}" height="{{ module.twocol_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+	{% endif %}
+	 {% set loadingAttr = module.twocol_image.loading != 'disabled' ? 'loading="{{ module.twocol_image.loading }}"' : '' %}
+	<img src="{{ module.twocol_image.src }}" alt="{{ module.twocol_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+{% endif %}
+  </div>
+  
+  <div class="column text_field">
+    {% inline_rich_text field="twocol_text_field" value="{{ module.twocol_text_field }}" %}
+  </div>
+
+</div>

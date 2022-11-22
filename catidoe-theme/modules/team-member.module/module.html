@@ -1,0 +1,33 @@
+<div class="team-member">
+  
+   <div class="row image">
+      {% if module.image.src %}
+      {% set sizeAttrs = 'width="{{ module.image.width }}" height="{{ module.image.height }}"' %}
+      {% if module.image.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ module.image.width }}" height="{{ module.image.height }}" style="max-width: 100%; height: auto;"' %}
+      {% elif module.image.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.image.max_width }}" height="{{ module.image.max_height }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+       {% set loadingAttr = module.image.loading != 'disabled' ? 'loading="{{ module.image.loading }}"' : '' %}
+      <img src="{{ module.image.src }}" alt="{{ module.image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+    {% endif %}
+  </div>
+  
+  <div class="content">
+    
+    <div class="row name">
+      <h5>
+        {% inline_text field="name_field" value="{{ module.name_field }}" %}
+      </h5>
+    </div>
+ 
+    <div class="row job">
+      <p>
+        {% inline_text field="job_field" value="{{ module.job_field }}" %}
+      </p>
+    </div>
+    
+  </div>
+
+</div>
+

@@ -1,0 +1,10 @@
+[
+  {
+    "label": "Background",
+    "name": "background_color",
+    "type": "color",
+    "default": {
+      "color": "#EAD1DC"
+    }
+  }
+]
