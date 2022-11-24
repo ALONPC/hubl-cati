@@ -7,31 +7,30 @@
 
 <header>
   <!--Title of the header-->
-    <h1> {% module "text" path="@hubspot/text" value="Max is the best cat, im sorry" %} </h1>
+  <h1>
+    {% module "text" path="@hubspot/text" value="Max is the best cat, im sorry"
+    %}
+  </h1>
 
   <!--Quote of the header-->
-    <div class="quote--menu">
-      
-    {% module_block module "my_rich_text_module" path="@hubspot/rich_text" ,label="Quote" %}
-        {% module_attribute "html" %}
-            <p><i>The naming of cats is a difficult matter. It isn't just one of your holiday games. You may think at first I'm mad as a hatter. When I tell you a cat must have three different names... </i></p>
-        {% end_module_attribute %}
-    {% end_module_block %}
-      
-    </div>
-  
-  <!--Menu of the header-->
-   <div class="header--navigation">
-      {% module "menu-section" 
-          path="/catidoe-theme/modules/menu-section.module", 
-          label="Menu"
-          %}   
+  <div class="quote--menu">
+    {% module_block module "my_rich_text_module" path="@hubspot/rich_text"
+    ,label="Quote" %} {% module_attribute "html" %}
+    <p>
+      <i
+        >The naming of cats is a difficult matter. It isn't just one of your
+        holiday games. You may think at first I'm mad as a hatter. When I tell
+        you a cat must have three different names...
+      </i>
+    </p>
+    {% end_module_attribute %} {% end_module_block %}
   </div>
-   
-   
-  
 
-  
+  <!--Menu of the header-->
+  <div class="header--navigation">
+    {% module "menu-section" path="/catidoe-theme/modules/menu-section.module",
+    label="Menu" %}
+  </div>
 </header>
 
 <!-- End partial -->

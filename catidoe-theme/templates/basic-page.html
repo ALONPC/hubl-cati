@@ -12,14 +12,14 @@
     {{ require_css(get_asset_url('catidoe-theme/css/layout.css')) }} 
     {{ require_css(get_asset_url('catidoe-theme/css/main.css')) }} 
     {{ standard_header_includes }}
-  </head>
-  <body>
-    {% global_partial path='catidoe-theme/templates/partials/header.html'%}
+    </head>
+    <body>
+    {% global_partial path='catidoe-theme/templates/partials/header.html' %}
 
-    <div class="title">
+    <div div class="title">
       <h1>Our Mission</h1>
     </div>
-    {% dnd_area "two-columns", label="twoColumns" %}
+    {% dnd_area "two-columns" label="twoColumns" %}
       {% dnd_section padding={
         top: 0,
         left: 32,
@@ -62,7 +62,86 @@
     <div class="title">
       <h1>Our Team</h1>
     </div>
-    {% dnd_area "grid", label="module_grid" %}
+
+    <div class="team-member--container">
+      <div class="team-member">
+        {% module "team-member"
+        name_field="Max"
+        job_field="CEO"
+        image={
+          "src": "https://images.unsplash.com/photo-1574158622682-e40e69881006?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80",
+          "alt": "cat",
+          "width": "100%",
+        } 
+        path="../modules/team-member.module" %}
+      </div>
+      
+      <div class="team-member">
+        {% module
+        "team-member"
+        name_field="Chimeco"
+        job_field="Co-Founder"
+        image={
+          "src": "https://images.unsplash.com/photo-1574158622682-e40e69881006?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80",
+          "alt": "cat",
+          "width": "100%",
+        } 
+        path="../modules/team-member.module" %}
+      </div>
+
+      <div class="team-member">
+        {% module
+        "team-member"
+        name_field="Coltraine"
+        job_field="CTO"
+        image={
+          "src": "https://www.thesprucepets.com/thmb/elAV4Ov6lqPi2DNu8VKyMNYWLFw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/37868147_243349996310794_540614542934147072_n-5b69b2b046e0fb0050630e3d.jpg",    
+          "alt": "cat",
+          "width": "100%",
+        } 
+        path="../modules/team-member.module" %}
+      </div>
+
+      <div class="team-member">
+        {% module
+        "team-member"
+        name_field="Michiquito"
+        job_field="Sales Manager"
+        image={
+          "src": "https://images.squarespace-cdn.com/content/v1/5a2c764af43b551b489c752d/1519112095045-WTTF6B2O1K31BSM1M5A4/javacats24Nov20170112.jpg?format=1500w",
+          "alt": "cat",
+          "width": "100%",
+        } 
+        path="../modules/team-member.module" %}
+      </div>
+
+      <div class="team-member">
+        {% module
+        "team-member"
+        name_field="Felix"
+        job_field="Designer" 
+        image={
+          "src": "https://images.unsplash.com/photo-1574158622682-e40e69881006?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80",
+          "alt": "cat",
+          "width": "100%",
+        } 
+        path="../modules/team-member.module" %}
+      </div>
+
+      <div class="team-member">
+        {% module
+        "team-member"
+        name_field="Marie Antoniette"
+        job_field="Developer"
+        image={
+          "src": "https://whatsupnewp.com/wp-content/uploads/2022/11/20221003172830.jpg",
+          "alt": "cat",
+          "width": "100%",
+        } 
+        path="../modules/team-member.module" %}
+      </div>
+    </div>
+    {# {% dnd_area "grid", label="module_grid" %}
       {% dnd_section padding={
         top: 0,
         left: 32,
@@ -113,7 +192,9 @@
         {% end_dnd_column %}
 
       {% end_dnd_section %}
-    {% end_dnd_area %}
+    {% end_dnd_area %} #}
+
+    {% global_partial path='catidoe-theme/templates/partials/footer.html' %}
 
     {{ standard_footer_includes }}
   </body>

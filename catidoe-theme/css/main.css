@@ -79,3 +79,33 @@ p {
 .title {
   margin: 32px;
 }
+
+.team-member--container {
+  margin: 32px;
+  display: grid;
+  /* grid-template-columns: repeat({{ theme.team_members_quantity.number }}, 1fr); */
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(3, minmax(auto-fit, 1fr)); */
+  row-gap: 32px;
+}
+
+/* .team-member img {
+  width: auto;
+  height: 200px;
+} */
+
+@media (max-width: 900px) {
+  .team-member--container {
+    margin: 32px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, minmax(auto-fit, 1fr)); */
+    row-gap: 24px;
+  }
+}
+
+.footer--container {
+  padding: 24px 0 8px 32px;
+  border-top: 1px solid black;
+  background-color: {{ theme.background_color.color }};
+}
